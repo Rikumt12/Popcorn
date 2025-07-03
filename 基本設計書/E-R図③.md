@@ -19,6 +19,8 @@ erDiagram
     ROLES {
         int role_id PK "ロールID (1:管理者, 2:一般ユーザー)"
         string role_name "ロール名"
+        datetime created_at "登録日時"
+        datetime updated_at "更新日時"
     }
     PRODUCTS {
         int product_id PK "商品ID"
@@ -34,6 +36,8 @@ erDiagram
     CATEGORIES {
         int category_id PK "カテゴリID"
         string category_name "カテゴリ名"
+        datetime created_at "登録日時"
+        datetime updated_at "更新日時"
     }
     ORDERS {
         int order_id PK "注文ID"
@@ -42,6 +46,8 @@ erDiagram
         string shipping_address "配送先住所"
         string order_status "注文ステータス（例：受付済、発送済）"
         datetime order_date "注文日時"
+        datetime created_at "登録日時"
+        datetime updated_at "更新日時"
     }
     ORDER_ITEMS {
         int order_item_id PK "注文商品ID"
@@ -49,5 +55,7 @@ erDiagram
         int product_id FK "商品ID"
         int quantity "数量"
         decimal price "注文時の単価"
+        datetime created_at "登録日時"
+        datetime updated_at "更新日時"
     }
 ```
