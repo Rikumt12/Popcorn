@@ -2,7 +2,6 @@
 
 erDiagram
     CUSTOMERS ||--o{ ORDERS : "places"
-    CUSTOMERS }o--|| ROLES : "has"
     PRODUCTS }o--|| CATEGORIES : "belongs to"
     ORDERS ||--o{ ORDER_ITEMS : "includes"
     PRODUCTS ||--o{ ORDER_ITEMS : "ordered in"
@@ -12,13 +11,6 @@ erDiagram
         string name "氏名"
         string email "メールアドレス"
         string password "パスワード（ハッシュ化）"
-        int role_id FK "ロールID (1:一般ユーザー)"
-        datetime created_at "登録日時"
-        datetime updated_at "更新日時"
-    }
-    ROLES {
-        int role_id PK "ロールID (1:管理者, 2:一般ユーザー)"
-        string role_name "ロール名"
         datetime created_at "登録日時"
         datetime updated_at "更新日時"
     }
