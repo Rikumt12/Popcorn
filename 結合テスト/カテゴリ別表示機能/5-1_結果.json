@@ -1,0 +1,48 @@
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 23 Jul 2025 01:24:18 GMT
+Connection: close
+
+[
+  {
+    "productId": 4,
+    "name": "ステンレスタンブラー",
+    "price": 2800,
+    "imageUrl": "/images/tumbler.png",
+    "stock": 30
+  },
+  {
+    "productId": 8,
+    "name": "木製コースター（4枚セット）",
+    "price": 1800,
+    "imageUrl": "/images/wooden-coaster.png",
+    "stock": 50
+  },
+  {
+    "productId": 16,
+    "name": "カトラリー",
+    "price": 1600,
+    "imageUrl": "/images/katorari.png",
+    "stock": 35
+  },
+  {
+    "productId": 24,
+    "name": "エプロン",
+    "price": 2000,
+    "imageUrl": "/images/epuronn.png",
+    "stock": 35
+  },
+  {
+    "productId": 26,
+    "name": "ガラス保存容器セット",
+    "price": 1300,
+    "imageUrl": "/images/glass-container.png",
+    "stock": 20
+  }
+]
