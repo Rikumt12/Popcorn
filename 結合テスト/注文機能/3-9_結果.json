@@ -1,0 +1,14 @@
+HTTP/1.1 500 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 23 Jul 2025 02:14:58 GMT
+Connection: close
+
+{
+  "message": "Required request body is missing: public org.springframework.http.ResponseEntity<com.example.simplezakka.dto.order.OrderResponse> com.example.simplezakka.controller.OrderController.placeOrder(com.example.simplezakka.dto.order.OrderRequest,jakarta.servlet.http.HttpSession)"
+}
