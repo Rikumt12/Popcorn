@@ -1,0 +1,51 @@
+HTTP/1.1 200 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 23 Jul 2025 04:36:11 GMT
+Connection: close
+
+{
+  "items": {
+    "1": {
+      "id": "1",
+      "productId": 1,
+      "name": "シンプルデスクオーガナイザー",
+      "price": 3500,
+      "imageUrl": "/images/desk-organizer.png",
+      "quantity": 2,
+      "subtotal": 7000
+    },
+    "2": {
+      "id": "2",
+      "productId": 2,
+      "name": "アロマディフューザー（ウッド）",
+      "price": 4200,
+      "imageUrl": "/images/aroma-diffuser.png",
+      "quantity": 2,
+      "subtotal": 8400
+    }
+  },
+  "totalQuantity": 4,
+  "totalPrice": 15400
+}
+
+HTTP/1.1 201 
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 23 Jul 2025 04:36:54 GMT
+Connection: close
+
+{
+  "orderId": 4,
+  "orderDate": "2025-07-23T13:36:54.0993293"
+}
