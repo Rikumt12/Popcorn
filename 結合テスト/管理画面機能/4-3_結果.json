@@ -1,0 +1,425 @@
+HTTP/1.1 200 
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Type: text/html;charset=UTF-8
+Content-Language: ja-JP
+Transfer-Encoding: chunked
+Date: Wed, 23 Jul 2025 05:24:26 GMT
+Connection: close
+
+<!-- src/main/resources/templates/admin/dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>商品一覧（管理画面）</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        img {
+            max-width: 80px;
+            height: auto;
+        }
+        .actions button,
+        .actions a {
+            padding: 6px 12px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 0 4px;
+        }
+        .actions button:hover,
+        .actions a:hover {
+            background-color: #0056b3;
+        }
+        form {
+            display: inline-block;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>商品一覧（管理画面）</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>画像</th>
+            <th>名前</th>
+            <th>価格</th>
+            <th>在庫</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td><img src="/images/desk-organizer.png" alt="画像"></td>
+            <td>シンプルデスクオーガナイザー</td>
+            <td>¥3500</td>
+            <td>20</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img src="/images/aroma-diffuser.png" alt="画像"></td>
+            <td>アロマディフューザー（ウッド）</td>
+            <td>¥4200</td>
+            <td>15</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img src="/images/cotton-blanket.png" alt="画像"></td>
+            <td>コットンブランケット</td>
+            <td>¥5800</td>
+            <td>10</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img src="/images/tumbler.png" alt="画像"></td>
+            <td>ステンレスタンブラー</td>
+            <td>¥2800</td>
+            <td>30</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img src="/images/wall-clock.png" alt="画像"></td>
+            <td>ミニマルウォールクロック</td>
+            <td>¥3200</td>
+            <td>25</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img src="/images/cushion-cover.png" alt="画像"></td>
+            <td>リネンクッションカバー</td>
+            <td>¥2500</td>
+            <td>40</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img src="/images/flower-vase.png" alt="画像"></td>
+            <td>陶器フラワーベース</td>
+            <td>¥4000</td>
+            <td>15</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img src="/images/wooden-coaster.png" alt="画像"></td>
+            <td>木製コースター（4枚セット）</td>
+            <td>¥1800</td>
+            <td>50</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img src="/images/tote-bag.png" alt="画像"></td>
+            <td>キャンバストートバッグ</td>
+            <td>¥3600</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img src="/images/soped.png" alt="画像"></td>
+            <td>ソープディスペンサー</td>
+            <td>¥1800</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><img src="/images/keisoudo.png" alt="画像"></td>
+            <td>珪藻土バスマット</td>
+            <td>¥1500</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><img src="/images/note.png" alt="画像"></td>
+            <td>ベーシックノート</td>
+            <td>¥500</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><img src="/images/penntate.png" alt="画像"></td>
+            <td>ペン立て(木製)</td>
+            <td>¥2500</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><img src="/images/karennda-.png" alt="画像"></td>
+            <td>カレンダー（2025）</td>
+            <td>¥900</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><img src="/images/suitou.png" alt="画像"></td>
+            <td>ウォーターボトル</td>
+            <td>¥900</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="/images/katorari.png" alt="画像"></td>
+            <td>カトラリー</td>
+            <td>¥1600</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="/images/toireburasi.png" alt="画像"></td>
+            <td>トイレブラシ</td>
+            <td>¥1200</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="/images/taoru.png" alt="画像"></td>
+            <td>タオル</td>
+            <td>¥400</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="/images/stand.png" alt="画像"></td>
+            <td>スタンドライト</td>
+            <td>¥3000</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="/images/kannyou.png" alt="画像"></td>
+            <td>観葉植物</td>
+            <td>¥5500</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="/images/kannsetsu.png" alt="画像"></td>
+            <td>間接照明</td>
+            <td>¥7000</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><img src="/images/husenn.png" alt="画像"></td>
+            <td>付箋</td>
+            <td>¥300</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td><img src="/images/handhifann.png" alt="画像"></td>
+            <td>ハンディファン</td>
+            <td>¥2400</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td><img src="/images/epuronn.png" alt="画像"></td>
+            <td>エプロン</td>
+            <td>¥2000</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td><img src="/images/kasa.jpg" alt="画像"></td>
+            <td>折りたたみかさ</td>
+            <td>¥3200</td>
+            <td>35</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td><img src="/images/glass-container.png" alt="画像"></td>
+            <td>ガラス保存容器セット</td>
+            <td>¥1300</td>
+            <td>20</td> 
+            <td class="actions">
+                <a href="#" onclick="return showNotImplementedAlert();">編集</a>
+                <form onsubmit="return showNotImplementedAlert();" style="display:inline;">
+                    <button type="submit">削除</button>
+                </form>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<script>
+function showNotImplementedAlert() {
+    alert("まだ実装できていません");
+    return false; 
+}
+</script>
+
+</body>
+</html>
