@@ -6,7 +6,7 @@ Pragma: no-cache
 Expires: 0
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Wed, 23 Jul 2025 02:33:25 GMT
+Date: Fri, 25 Jul 2025 05:25:46 GMT
 Connection: close
 
 {
@@ -17,13 +17,14 @@ Connection: close
       "name": "シンプルデスクオーガナイザー",
       "price": 3500,
       "imageUrl": "/images/desk-organizer.png",
-      "quantity": 2,
-      "subtotal": 7000
+      "quantity": 3,
+      "subtotal": 10500
     }
   },
-  "totalQuantity": 2,
-  "totalPrice": 7000
+  "totalQuantity": 3,
+  "totalPrice": 10500
 }
+
 
 
 HTTP/1.1 201 
@@ -34,10 +35,10 @@ Pragma: no-cache
 Expires: 0
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Wed, 23 Jul 2025 02:30:37 GMT
+Date: Fri, 25 Jul 2025 05:26:02 GMT
 Connection: close
 
 {
   "orderId": 1,
-  "orderDate": "2025-07-23T11:30:36.9709358"
+  "orderDate": "2025-07-25T14:26:02.2908121"
 }

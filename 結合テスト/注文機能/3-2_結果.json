@@ -6,7 +6,7 @@ Pragma: no-cache
 Expires: 0
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Wed, 23 Jul 2025 04:36:11 GMT
+Date: Fri, 25 Jul 2025 05:29:33 GMT
 Connection: close
 
 {
@@ -26,13 +26,14 @@ Connection: close
       "name": "アロマディフューザー（ウッド）",
       "price": 4200,
       "imageUrl": "/images/aroma-diffuser.png",
-      "quantity": 2,
-      "subtotal": 8400
+      "quantity": 1,
+      "subtotal": 4200
     }
   },
-  "totalQuantity": 4,
-  "totalPrice": 15400
+  "totalQuantity": 3,
+  "totalPrice": 11200
 }
+
 
 HTTP/1.1 201 
 X-Content-Type-Options: nosniff
@@ -42,10 +43,10 @@ Pragma: no-cache
 Expires: 0
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Wed, 23 Jul 2025 04:36:54 GMT
+Date: Fri, 25 Jul 2025 05:33:23 GMT
 Connection: close
 
 {
-  "orderId": 4,
-  "orderDate": "2025-07-23T13:36:54.0993293"
+  "orderId": 1,
+  "orderDate": "2025-07-25T14:33:23.4876923"
 }
