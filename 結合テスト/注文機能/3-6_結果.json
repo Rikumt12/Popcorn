@@ -6,14 +6,14 @@ Pragma: no-cache
 Expires: 0
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Thu, 24 Jul 2025 06:40:43 GMT
+Date: Fri, 25 Jul 2025 05:32:34 GMT
 Connection: close
 
 {
   "items": {
-    "99": {
-      "id": "99",
-      "productId": 99,
+    "999": {
+      "id": "999",
+      "productId": 999,
       "name": "ガラス保存容器セット",
       "price": 1300,
       "imageUrl": "/images/glass-container.png",
@@ -32,5 +32,5 @@ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Pragma: no-cache
 Expires: 0
 Content-Length: 0
-Date: Thu, 24 Jul 2025 06:41:37 GMT
+Date: Fri, 25 Jul 2025 05:33:45 GMT
 Connection: close
