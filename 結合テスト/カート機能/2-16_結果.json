@@ -6,11 +6,21 @@ Pragma: no-cache
 Expires: 0
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Wed, 23 Jul 2025 04:00:45 GMT
+Date: Fri, 25 Jul 2025 05:05:37 GMT
 Connection: close
 
 {
-  "items": {},
-  "totalQuantity": 0,
-  "totalPrice": 0
+  "items": {
+    "1": {
+      "id": "1",
+      "productId": 1,
+      "name": "シンプルデスクオーガナイザー",
+      "price": 3500,
+      "imageUrl": "/images/desk-organizer.png",
+      "quantity": 1,
+      "subtotal": 3500
+    }
+  },
+  "totalQuantity": 1,
+  "totalPrice": 3500
 }
